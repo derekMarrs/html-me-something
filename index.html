@@ -2,28 +2,46 @@
 <html>
 
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Single Page Sliding Layout - Design Shack Demo</title>
+    <meta name="author" content="Jake Rocheleau">
+    <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+    <link rel="icon" href="http://designshack.net/favicon.ico">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Questrial" rel="stylesheet">
     <title>Derek's HTML Me Something</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <header>
-      <h1>Hello! And welcome to my "HTML Me Something" Project!</h1>
+    <nav id="stickynav">
+      <ul id="nav" class="clearfix">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#trip">My Trip</a></li>
+        <li><a href="#hobby">My Hobby</a></li>
+      </ul>
+    </nav>
+    <header id="top">
+      <h1>Hello! Welcome to my "HTML Me Something" Project!</h1>
     </header>
     <main>
-    <article>
-      <div>
-        <img src="images/semo.jpg" alt="SEMO" width="20%" height="20%">
-        <p>To start off my proffesional career I will tell you about my first job. My first and current job is stocking in retail. I really do not enjoy it if I am being honest. Its not rewarding at all and I am definitely not paid what I think I should be. I stared working this job back in 2008. In 2009 I graduated highschool and went to college at SEMO. In 2014 I graduated from SEMO with a BS in Computer and Multimedia Graphics. The major was basically just a sampling platter of different things such as graphic design, web development, 3D modeling, photography, and videography. Once I graduated I decided I wanted to get into web development, so I started teaching myself. I am decent at it, but I just don't have enough confidence to go apply to a bunch of companies, which leads me to why I am at LaunchCode. I hope this program leads me to a wonderful company that I enjoy working at, and most importantly can help me improve my skills.</p>
-      </div>
-      <div>
-        <p>I think the best trip I have been on was in 2015 when me and my family went to Europe. We went there for 2 and a half weeks. For the first week we were in Spain. We went to a bunch of different small towns and saw all the different sights we could. We also went the Gibraltar while we were in Spain. Gibraltar was very cool because you could see Africa across the ocean because it was so close. For the second week we traveled by plane to Germany. We stayed in a small town call Trier, Germany. We did a ton of stuff in Germany. Like travel down the Rhine River and look at all the castles in the side of the hill. We also visited a couple gigantic old churches that were all beautiful. For the last 3 days we stayed in Paris, France. While in Paris we went to the Musea&#769;e du Louvre, Cha&#770;teau de Versailles, and Eifel Tower. We also visited a bunch of shops where I bought a &euro;50 bottle of absinthe that is disgusting and is still half full to this day. </p>
-        <img src="images/versai.jpg" alt="Versaillas" width="20%" height="20%">
-      </div>
-      <div>
-        <img src="images/rock.jpg" alt="SEMO" width="20%" height="20%">
-        <p>One of my favorite hobbys right now has to be rock climbing. It is such a blast and everytime you finish you are super sore because it works out so many muscles. However it does get pretty nerve wrecking at times. The reason for this is probably pretty obvious, but you are pretty high at times. And the only thing that is keeping you from falling to your death is this little half inch rope that another person has to hold to keep you up. To me that isn't the worst part though. On top rope I am never really scared. This is because if you miss a hold or slip, you don't really fall at all. The person belaying you holds onto the rope so you just hang there. However, with lead climbing, if you fall or slip, you are usually falling around 6 feet before the rope catches you. That doesn't sound like a lot but trust me! It is. That is why I really only boulder now, because the highest you get it a about 15 feet. You don't even need a rope to boulder!</p>
-      </div>
-    </article>
+      <article>
+        <div id="career">
+          <img src="images/semo.jpg" alt="SEMO">
+          <p>To start off my proffesional career I will tell you about my first job. My first and current job is stocking in retail. I really do not enjoy it if I am being honest. Its not rewarding at all and I am definitely not paid what I think I should be. I stared working this job back in 2008. In 2009 I graduated highschool and went to college at SEMO. In 2014 I graduated from SEMO with a BS in Computer and Multimedia Graphics. The major was basically just a sampling platter of different things such as graphic design, web development, 3D modeling, photography, and videography. Once I graduated I decided I wanted to get into web development, so I started teaching myself. I am decent at it, but I just don't have enough confidence to go apply to a bunch of companies, which leads me to why I am at LaunchCode. I hope this program leads me to a wonderful company that I enjoy working at, and most importantly can help me improve my skills.</p>
+        </div>
+        <div id="trip">
+          <img src="images/versai.jpg" alt="Versaillas">
+          <p>I think the best trip I have been on was in 2015 when me and my family went to Europe. We went there for 2 and a half weeks. For the first week we were in Spain. We went to a bunch of different small towns and saw all the different sights we could. We also went the Gibraltar while we were in Spain. Gibraltar was very cool because you could see Africa across the ocean because it was so close. For the second week we traveled by plane to Germany. We stayed in a small town call Trier, Germany. We did a ton of stuff in Germany. Like travel down the Rhine River and look at all the castles in the side of the hill. We also visited a couple gigantic old churches that were all beautiful. For the last 3 days we stayed in Paris, France. While in Paris we went to the Musea&#769;e du Louvre, Cha&#770;teau de Versailles, and Eifel Tower. We also visited a bunch of shops where I bought a &euro;50 bottle of absinthe that is disgusting and is still half full to this day. </p>
+        </div>
+        <div id="hobby">
+          <img src="images/rock.jpg" alt="SEMO">
+          <p>One of my favorite hobbys right now has to be rock climbing. It is such a blast and everytime you finish you are super sore because it works out so many muscles. However it does get pretty nerve wrecking at times. The reason for this is probably pretty obvious, but you are pretty high at times. And the only thing that is keeping you from falling to your death is this little half inch rope that another person has to hold to keep you up. To me that isn't the worst part though. On top rope I am never really scared. This is because if you miss a hold or slip, you don't really fall at all. The person belaying you holds onto the rope so you just hang there. However, with lead climbing, if you fall or slip, you are usually falling around 6 feet before the rope catches you. That doesn't sound like a lot but trust me! It is. That is why I really only boulder now, because the highest you get it a about 15 feet. You don't even need a rope to boulder!</p>
+        </div>
+      </article>
     </main>
     <footer>
       <h2>Thanks for visiting my project and don't forget to check out LaunchCode <a href ="www.launchcode.org">HERE</a></h2>
