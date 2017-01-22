@@ -105,6 +105,10 @@ div {
   vertical-align: middle;
 }
 
+.smalltext {
+	font-size: 1.2em;
+}
+
 h1 {
   font-family: 'Questrial', sans-serif;
   font-size: 3.9em;
